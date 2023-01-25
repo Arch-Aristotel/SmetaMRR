@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/fragment_Kab_kanaliz"
+    android:background="@color/white"
+    tools:context=".KabielKanaliz">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="31dp"
+            android:text="Общая протяженность кабельной канализации м.п."
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/editDlinnaKK"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:text="0.0"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="Емкость кабельной канализации"
+            android:textColor="@color/black" />
+
+        <Spinner
+            android:id="@+id/spinner_set_holes"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:theme="@style/mySpinnerItemStyle"
+            android:entries="@array/Seze_holes" />
+
+        <CheckBox
+            android:id="@+id/checkBox_dismant"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="Демонтаж" />
+    </LinearLayout>
+</FrameLayout>

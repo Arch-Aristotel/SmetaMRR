@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="set_back1">#D5D5D5</color>
+    <color name="set_back2">#F5F5F5</color>
+    
+    <color name="colorPrimaryDark">#CC0605</color>
+
+
+    <color name="fragmetn_1">#FF03DAC5</color>
+    <color name="fragment_2">#FF3700B3</color>
+
+
+    <color name="ButtonColor"></color>
+
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="red">#CC0605</color>
+</resources>

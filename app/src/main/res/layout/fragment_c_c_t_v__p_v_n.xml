@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".CCTV_PVN">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="Центр приемного, просмотрового,
+            переговорного и документируемого оборудования
+            ПВН (видеонаблюдение и экстреннаясвязь)
+            с количеством автоматизированных рабочих мест: " />
+
+        <EditText
+            android:id="@+id/editTextNumber_CCTV_PVN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:ems="10"
+            android:text="0"
+            android:inputType="number" />
+
+        <CheckBox
+            android:id="@+id/checkBox_ARM_PVN"
+            android:layout_width="215dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="Проектирование отдельного АРМ (не в рамках ПВН)"/>
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="Примечание: ПВН включает в себя: оптический кросс,
+            управляющий сетевой коммутатор, сервера, структурированную кабельную систему,
+            рабочие места операторов видеонаблюдения,
+            место оператора экстренной связи,
+            место оператора администратора." />
+    </LinearLayout>
+</FrameLayout>

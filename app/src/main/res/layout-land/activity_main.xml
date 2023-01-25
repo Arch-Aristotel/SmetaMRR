@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:screenOrientation="landscape"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_anchor="@+id/linearLayout"
+        app:layout_anchorGravity="center">
+
+        <Spinner
+            android:id="@+id/spinner_select"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:entries="@array/ing_name_select"
+            android:theme="@style/mySpinnerItemStyle" />
+
+        <Button
+            android:id="@+id/button_set_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:onClick="Clic_select"
+            android:text="Установить выбор"
+            android:textColor="@color/white"
+            android:visibility="invisible" />
+
+        <fragment
+            android:id="@+id/Frag_Show"
+            android:name="com.example.mytestapplication.KabielKanaliz"
+            android:layout_width="match_parent"
+            android:layout_height="350dp">
+
+        </fragment>
+
+        <CheckBox
+            android:id="@+id/checkBox_stage_P"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Стадия П"
+            android:textColor="@color/black" />
+
+        <CheckBox
+            android:id="@+id/checkBox_stage_R"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Стадия Р"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/button_calc"
+            android:layout_width="283dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:onClick="Click_button_calc"
+            android:text="Раcсчитать"
+            android:textColor="@color/white"
+            app:backgroundTint="@color/red" />
+
+        <TextView
+            android:id="@+id/textView_Characteristic"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:backgroundTint="@color/teal_700"
+            android:text="Характеристика предприятия, здания, сооружения или виды работ"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/textView_Collection"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:text="Cборника цен на проектные и изыскательские работы"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/textView_a"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:text="а - постоянная величина стоимости проектных работ"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/textView_b"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:text="в - постоянная величина стоимости проектных работ"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/textView_price"
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:text="Стоимость раздела"
+            android:textColor="@color/black" />
+
+    </LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

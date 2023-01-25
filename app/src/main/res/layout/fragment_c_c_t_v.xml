@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/fragment_CCCTV"
+    android:background="@color/white"
+    tools:context=".CCTV">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Видеонаблюдение внутри жилых домов, общественных и промышленных зданий"
+                android:textColor="@color/black" />
+
+            <CheckBox
+                android:id="@+id/checkBox_select_CCTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="За периметром здания, комплекса зданийи за их территориями"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/textView_CCTV_Inform"
+                android:layout_width="match_parent"
+                android:layout_height="33dp"
+                android:text="Количество видеокамер"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/editTextNumber_CCTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="number"
+                android:text="0"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Сумарная протяженность кабелей видеонаблюдения"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/editTextNumberDecimal_CCTV_cabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="numberDecimal"
+                android:text="0.0"
+                android:textColor="@color/black" />
+
+            <CheckBox
+                android:id="@+id/checkBox_CCTV_floor_koif"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="Проектирование систем видеонаблюдения в зданиях высотой свыше 75 м" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>
